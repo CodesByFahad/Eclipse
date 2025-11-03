@@ -39,9 +39,12 @@ import PrevLongArr from "./prev-long-arr";
 import NextLongArr from "./next-long-arr";
 import PrevLongArrTwo from "./prev-long-arr-2";
 import Tags from "./tags";
-import VeganProduct from "./vegan-product";
-import Meckoup from "./meckoup";
-import Cosmetics from "./cosmetics";
+
+// ✅ New, correctly named icons
+import ShoeIcon from "./ShoeIcon";
+import WatchIcon from "./WatchIcon";
+import JacketIcon from "./JacketIcon";
+
 import ArrowNext from "./arrow-next";
 import ArrowPrev from "./arrow-prev";
 import ArrowRightSm from "./arrow-right-sm";
@@ -111,9 +114,10 @@ export {
   ArrowNext,
   ArrowPrev,
   CompareThree,
-  Cosmetics,
-  Meckoup,
-  VeganProduct,
+  // ✅ New icons (use these names everywhere)
+  JacketIcon,
+  ShoeIcon,
+  WatchIcon,
   PaginationNext,
   PaginationPrev,
   Pause,

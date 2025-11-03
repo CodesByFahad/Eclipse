@@ -6,7 +6,10 @@ import { Navigation, EffectFade, Pagination } from "swiper";
 import slider_bg_1 from "@assets/img/slider/3/slider-1.jpg";
 import slider_bg_2 from "@assets/img/slider/3/slider-2.jpg";
 import slider_bg_3 from "@assets/img/slider/3/slider-3.jpg";
-import { ArrowNext, ArrowPrev, Cosmetics, Meckoup, VeganProduct } from "@/svg";
+import { ArrowNext, ArrowPrev } from "@/svg";
+import JacketIcon from "@/svg/JacketIcon";
+import ShoeIcon from "@/svg/ShoeIcon";
+import WatchIcon from "@/svg/WatchIcon";
 
 // slider setting
 const slider_setting = {
@@ -30,23 +33,23 @@ const slider_data = [
     id: 1,
     bg: slider_bg_1,
     subtitle: "Winter Collection 2025",
-    title: "Define your Elegance",
+    title: "Define Your Elegance",
   },
   {
     id: 2,
     bg: slider_bg_2,
     subtitle: "Top Brand Collection",
-    title: "Use the best for you.",
+    title: "Use The Best For You.",
   },
   {
     id: 3,
     bg: slider_bg_3,
-    subtitle: "Crafted for Modern Men",
-    title: "Men's Urban Collection",
+    subtitle: "Men’s Fashion Essentials",
+    title: "Style That Speaks Confidence",
   },
 ];
 
-// feature item 
+// feature item
 function FeatureItem({ icon, title }) {
   return (
     <div className="tp-slider-feature-item-3 d-flex mb-30">
@@ -77,29 +80,46 @@ const BeautyBanner = () => {
               <div
                 className="tp-slider-thumb-3 include-bg"
                 style={{ backgroundImage: `url(${item.bg.src})` }}
-              />
+              ></div>
               <div className="container">
                 <div className="row align-items-center">
                   <div className="col-xl-6 col-lg-6 col-md-8">
                     <div className="tp-slider-content-3">
-                      {/* dynamic subtitle & title */}
                       <span>{item.subtitle}</span>
                       <h3 className="tp-slider-title-3">{item.title}</h3>
 
                       <div className="tp-slider-feature-3 d-flex flex-wrap align-items-center p-relative z-index-1 mb-15">
-                        <FeatureItem icon={<Cosmetics />} title={<>High-end <br /> Cosmetics</>} />
-                        <FeatureItem icon={<VeganProduct />} title={<>Vegan <br /> Product</>} />
-                        <FeatureItem icon={<Meckoup />} title={<>Express <br /> Make-up</>} />
+                        <FeatureItem icon={<JacketIcon />} title={<>Men’s <br /> Jackets</>} />
+                        <FeatureItem icon={<ShoeIcon />} title={<>Premium <br /> Footwear</>} />
+                        <FeatureItem icon={<WatchIcon />} title={<>Watches & <br /> Accessories</>} />
                       </div>
 
                       <div className="tp-slider-btn-3">
-                        <Link
-                          href="/shop"
-                          className="tp-btn tp-btn-border tp-btn-border-white"
-                        >
-                          Discover Now
-                        </Link>
-                      </div>
+  <Link
+    href="/shop"
+    className="tp-btn tp-btn-border tp-btn-border-white force-white-hover"
+  >
+    Discover Now
+  </Link>
+
+  {/* ✅ Strong hover override */}
+  <style jsx global>{`
+    .force-white-hover:hover,
+    .force-white-hover:hover::before,
+    .force-white-hover:hover::after {
+      background: #ffffff !important;
+      border-color: #ffffff !important;
+    }
+
+    .force-white-hover:hover,
+    .force-white-hover:hover * {
+      color: #000000 !important;
+      fill: #000000 !important;
+    }
+  `}</style>
+</div>
+
+
                     </div>
                   </div>
                 </div>
