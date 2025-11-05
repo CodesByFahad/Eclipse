@@ -41,8 +41,8 @@ const BlogSidebar = () => {
                 <h3 className="tp-sidebar-about-title">
                   <a href="#">Ravi {"O'Leigh"}</a>
                 </h3>
-                <span className="tp-sidebar-about-designation">Photographer & Blogger</span>
-                <p>Lorem ligula eget dolor. Aenean massa. Cum sociis que penatibus magnis dis parturient</p>
+                <span className="tp-sidebar-about-designation">Enterpreneur & Blogger</span>
+                <p>Passionate about innovation, business growth, and storytelling. I share insights on building brands</p>
                 <div className="tp-sidebar-about-signature">
                   <Image src={signature} alt="signature" />
                 </div>

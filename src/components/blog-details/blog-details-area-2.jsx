@@ -3,8 +3,8 @@ import Image from 'next/image';
 // internal
 import shape_line from '@assets/img/blog/details/shape/line.png';
 import shape_line_2 from '@assets/img/blog/details/shape/quote.png';
-import blog_details_big_img from '@assets/img/blog/details/blog-big-1.jpg';
-import blog_details_sm_img from '@assets/img/blog/details/blog-details-sm-1.jpg';
+import blog_details_big_img from '@assets/img/blog/details/blog-big-1.png';
+import blog_details_sm_img from '@assets/img/blog/details/blog-details-sm-1.png';
 import blogData from '@/data/blog-data';
 import GridItem from '../blog/blog-grid/grid-item';
 import BlogDetailsComments from './blog-details-comments';

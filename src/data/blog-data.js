@@ -120,8 +120,8 @@ const blogData = [
     comments:2,
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
-    title:'How to Clean Your Home Faster and More Efficiently',
-    desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat',
+    title:'The Future of Online Fashion: How E-Commerce is Redefining Retail',
+    desc:'Discover how modern e-commerce platforms are transforming the way people shop for clothing. From AI-powered recommendations to seamless mobile checkout, fashion brands are embracing technology to create personalized, fast, and immersive shopping experiences that go beyond traditional stores.',
     blog:'blog-postbox'
   },
   {
@@ -132,8 +132,8 @@ const blogData = [
     comments:5,
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
-    title:'Four Ways a Clean Workplace Makes Employees Happy and Healthy',
-    desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat',
+    title:'How a Well-Organized Online Store Creates Happier Shoppers and Stronger Sales',
+    desc:'A seamless shopping experience begins with order and clarity. From intuitive navigation to quick product searches, an organized e-commerce store not only boosts customer satisfaction but also builds lasting trust.',
     video:true,
     video_id:'457mlqV1gzA',
     blog:'blog-postbox'
@@ -157,8 +157,8 @@ const blogData = [
     comments:10,
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
-    title:'Time for Spring Cleaning? Use These Tips From the Professionals',
-    desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat',
+    title:'Is Your Online Store Ready for a Makeover? Try These Pro Tips to Boost Sales',
+    desc:'Just like spring cleaning, refreshing your e-commerce store can bring new energy and better results. From updating product visuals and refining SEO keywords to improving page speed and mobile experience — these expert tips will help you declutter your store, attract more visitors, and turn browsers into loyal buyers.',
     audio:true,
     audio_id:'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/316547873&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
     blog:'blog-postbox'
@@ -172,8 +172,8 @@ const blogData = [
     comments:12,
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
-    title:'Time for Spring Cleaning? Use These Tips From the Professionals',
-    desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat',
+    title:'Give Your Online Store a Fresh Start: Proven Strategies to Revamp and Re-Engage Customers',
+    desc:'Every successful e-commerce brand needs a refresh now and then. From optimizing your homepage design to improving product photography and rethinking promotions, small updates can make a big impact. Discover expert-backed strategies to modernize your store’s look, improve loading speed, and create a seamless shopping experience that inspires visitors to browse, trust, and buy again.',
     blog:'blog-postbox'
   },
   // blog grid data 
@@ -187,7 +187,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Hiring the Right Sales Team at the Right Time',
-    desc:'Cursus mattis sociis natoque penatibus et magnis montes,nascetur ridiculus.',
+    desc:'Collaborating with creative minds to build something meaningful and impactful',
     blog:'blog-grid'
   },
   {
@@ -200,7 +200,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Fully Embrace the Return of 90s fashion',
-    desc:'Cursus mattis sociis natoque penatibus et magnis montes,nascetur ridiculus.',
+    desc:'Sharing experiences that spark creativity and growth',
     blog:'blog-grid'
   },
   {
@@ -213,7 +213,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Exploring the English Countryside',
-    desc:'Cursus mattis sociis natoque penatibus et magnis montes,nascetur ridiculus.',
+    desc:'A journey of collaboration, growth, and endless possibilities',
     blog:'blog-grid'
   },
   {
@@ -226,7 +226,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Here’s the First Valentino’s New Makeup Collection',
-    desc:'Cursus mattis sociis natoque penatibus et magnis montes,nascetur ridiculus.',
+    desc:'Where business, creativity, and innovation come together',
     blog:'blog-grid'
   },
   {
@@ -239,7 +239,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Follow Your own Design process, whatever gets',
-    desc:'Cursus mattis sociis natoque penatibus et magnis montes,nascetur ridiculus.',
+    desc:'Driven by passion, purpose, and the pursuit of excellence.',
     blog:'blog-grid'
   },
   {
@@ -252,7 +252,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Freelancer Days 2022, What’s new?',
-    desc:'Cursus mattis sociis natoque penatibus et magnis montes,nascetur ridiculus.',
+    desc:'Exploring ideas that inspire change and empower others.',
     blog:'blog-grid'
   },
   {
@@ -264,8 +264,8 @@ const blogData = [
     comments:6,
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
-    title:'Hiring the Right Sales Team at the Right Time',
-    desc:'Cursus mattis sociis natoque penatibus et magnis montes,nascetur ridiculus.',
+    title:'"Making The Best Teams"',
+    desc:'A journey of collaboration, growth, and endless possibilities.',
     blog:'blog-grid'
   },
   {
@@ -278,7 +278,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Quality Foods Requirments For Every Human Body’s',
-    desc:'Cursus mattis sociis natoque penatibus et magnis montes,nascetur ridiculus.',
+    desc:'A journey of taste, purity, and perfection.',
     blog:'blog-grid'
   },
 ];

@@ -9,8 +9,8 @@ import PostboxDetailsNav from './postbox-details-nav';
 import PostboxDetailsTop from './postbox-details-top';
 import shape_line from '@assets/img/blog/details/shape/line.png';
 import shape_line_2 from '@assets/img/blog/details/shape/quote.png';
-import blog_details_big_img from '@assets/img/blog/details/blog-big-1.jpg';
-import blog_details_sm_img from '@assets/img/blog/details/blog-details-sm-1.jpg';
+import blog_details_big_img from '@assets/img/blog/details/blog-big-1.png';
+import blog_details_sm_img from '@assets/img/blog/details/blog-details-sm-1.png';
 import social_data from '@/data/social-data';
 import comment_data from '@/data/blog-comment-data';
 
@@ -39,7 +39,7 @@ const BlogDetailsArea = ({blog}) => {
                 <p>One of the challenges that often surfaces when  working with a remote sales team is a lack of transparency over what is happening, and where in the process things are taking place. We’re going to peel back the curtain and show you how to create the best sales.</p>
 
                 <h4 className="tp-postbox-details-heading">Breaking Up With Fast Fashion Has Been Easier</h4>
-                <p>Lommodo ligula eget dolor. Aenean massa. Cum sociis que penatibus magnis dis parturient montes lorem, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque euro, pretium, sem. Nulla onsequat massa quis enim. donec pede justo fringilla vel aliquet.</p>
+                <p>Letting go of fast fashion has never been easier. Today’s shoppers are embracing timeless designs, sustainable fabrics, and mindful choices. Quality pieces now outshine quantity, proving that true style comes from conscious decisions — not constant trends.</p>
 
                 <div className="tp-postbox-details-desc-thumb text-center">
                   <Image src={blog_details_sm_img} alt="details-sm-img" />
@@ -59,16 +59,16 @@ const BlogDetailsArea = ({blog}) => {
                 </div>
 
                 <h4 className="tp-postbox-details-heading">Exploring the English Countryside</h4>
-                <p>Lorem ligula eget dolor. Aenean massa. Cum sociis que penatibus et magnis dis parturient montes lorem,nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque euro, pretium quis, sem. Nulla onsequat massa quis enim.</p>
+                <p>Experience the charm of the English countryside — where rolling green hills, cozy cottages, and peaceful meadows create the perfect escape from the busy city life. Every path tells a story, and every village invites you to slow down and take in the beauty of nature.</p>
 
                 <div className="tp-postbox-details-list">
                   <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>At vero eos et accusamus et iusto odio.</li>
-                    <li>Excepteur sint occaecat cupidatat non proident.</li>
+                    <li>Discover hidden trails surrounded by wildflowers and stone walls.</li>
+                    <li>Enjoy farm-to-table delights made with fresh local ingredients.</li>
+                    <li>Capture timeless moments in landscapes rich with history and culture.</li>
                   </ul>
                 </div>
-                <p>Rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer cidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae lorem.</p>
+                <p>Whether you’re sipping tea in a quiet garden or walking along misty fields at dawn, the English countryside offers a sense of calm and inspiration like no other. It’s more than a destination — it’s a journey back to simplicity, beauty, and balance.</p>
 
                 <div className="tp-postbox-details-share-wrapper">
                   <div className="row">
