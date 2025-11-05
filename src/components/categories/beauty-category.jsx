@@ -10,10 +10,10 @@ import watchImg from "/public/assets/img/men/watches.jpg";
 import groomingImg from "/public/assets/img/men/grooming.jpg";
 
 const MEN_CATEGORIES = [
-  { id: 1, title: "Jackets & Outerwear", category: "Clothing", count: 4, img: jacketImg },
-  { id: 2, title: "Premium Footwear", category: "Beauty of Skin", count: 2, img: footwearImg },
-  { id: 3, title: "Watches & Accessories", category: "Bracelets", count: 3, img: watchImg },
-  { id: 4, title: "Grooming Essentials", category: "Necklaces", count: 2, img: groomingImg },
+  { id: 1, title: "Jackets & Outerwear", category: "jackets", count: 4, img: jacketImg },
+  { id: 2, title: "Premium Footwear", category: "formal-shoes", count: 2, img: footwearImg },
+  { id: 3, title: "Watches & Accessories", category: "watches", count: 3, img: watchImg },
+  { id: 4, title: "Grooming Essentials", category: "perfumes--body-sprays", count: 2, img: groomingImg },
 ];
 
 

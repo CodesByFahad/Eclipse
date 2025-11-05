@@ -64,12 +64,12 @@ const Footer = ({ style_2 = false, style_3 = false, primary_style = false }) => 
                   <h4 className="tp-footer-widget-title">Shop</h4>
                   <div className="tp-footer-widget-content">
                     <ul>
-                      <li><a href="#">New Arrivals</a></li>
-                      <li><a href="#">Winter Collection</a></li>
-                      <li><a href="#">Accessories</a></li>
-                      <li><a href="#">Footwear</a></li>
-                      <li><a href="#">Sale</a></li>
-                      <li><a href="#">Gift Cards</a></li>
+                      <li><a href="/shop">New Arrivals</a></li>
+                      <li><a href="/shop">Winter Collection</a></li>
+                      <li><a href="/shop">Accessories</a></li>
+                      <li><a href="/shop">Footwear</a></li>
+                      <li><a href="/shop">Sale</a></li>
+                      <li><a href="/shop">Gift Cards</a></li>
                     </ul>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ const Footer = ({ style_2 = false, style_3 = false, primary_style = false }) => 
                       <li><a href="#">Shipping & Returns</a></li>
                       <li><a href="#">Privacy Policy</a></li>
                       <li><a href="#">Terms & Conditions</a></li>
-                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="/contact">Contact Us</a></li>
                     </ul>
                   </div>
                 </div>

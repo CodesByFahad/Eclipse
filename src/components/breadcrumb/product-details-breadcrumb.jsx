@@ -24,6 +24,28 @@ const ProductDetailsBreadcrumb = ({ category, title }) => {
     return rename[name] || name;
   };
 
+  // ✅ Create slug for URL (keeps links consistent with backend filters)
+  const getCategorySlug = (name) => {
+    const rename = {
+      "Headphones": "formal-shirts",
+      "Mobile Tablets": "t-shirts",
+      "CPU Heat Pipes": "polo-shirts",
+      "Smart Watch": "hoodies-sweatshirts",
+      "Bluetooth": "blazers-suits",
+      "Clothing": "jackets",
+      "Bags": "jeans",
+      "Shoes": "trousers-chinos",
+      "Discover Skincare": "sneakers",
+      "Beauty of Skin": "formal-shoes",
+      "Awesome Lip Care": "belts",
+      "Facial Care": "wallets",
+      "Bracelets": "watches",
+      "Earrings": "sunglasses",
+      "Necklaces": "perfumes-body-sprays",
+    };
+    return rename[name] || name.toLowerCase().replace(/&/g, '').split(' ').join('-');
+  };
+
   return (
     <section className="breadcrumb__area breadcrumb__style-2 include-bg pt-50 pb-20">
       <div className="container">
@@ -34,8 +56,13 @@ const ProductDetailsBreadcrumb = ({ category, title }) => {
                 <span className="breadcrumb-icon">
                   <SmDot />{" "}
                 </span>
-                <span><a href="#">Home</a></span>
-                <span><a href="#">{getDisplayName(category)}</a></span>
+                <span><a href="/">Home</a></span>
+                {/* ✅ Dynamically linked category */}
+                <span>
+                  <a href={`/shop?category=${getCategorySlug(category)}`}>
+                    {getDisplayName(category)}
+                  </a>
+                </span>
                 <span>{title}</span>
               </div>
             </div>
