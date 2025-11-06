@@ -38,7 +38,7 @@ const BlogBreadcrumb = () => {
 
               <div className="breadcrumb__list">
                 <span>
-                  <a href="#">Home</a>
+                  <a href="/">Home</a>
                 </span>
                 <span>Blog</span>
               </div>
