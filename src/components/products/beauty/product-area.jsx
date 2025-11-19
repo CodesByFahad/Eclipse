@@ -11,7 +11,7 @@ const ProductArea = () => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    fetch('https://shofy-backend-git-main-ammar-amjads-projects.vercel.app/api/products/all')
+    fetch('https://eclipse-products-backend.vercel.app/api/products/all')
       .then(res => res.json())
       .then(data => {
         setProducts(data.data.sort(() => 0.5 - Math.random()).slice(0, 8));
