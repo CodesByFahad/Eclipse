@@ -1,19 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, EffectFade } from 'swiper';
-import Image from 'next/image';
-// internal
-import special_thumb from '@assets/img/product/special/big/special-big-1.png';
-import { ArrowNextSm, ArrowPrevSm, PlusTwo } from '@/svg';
-import ProductItem from './product-item';
-import ErrorMsg from '@/components/common/error-msg';
-import { HomeThreeTrendingPrdLoader } from '@/components/loader';
+"use client";
+import React, { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation, EffectFade } from "swiper";
+import Image from "next/image";
+
+import special_thumb from "@assets/img/product/special/big/special-big-1.png";
+import { ArrowNextSm, ArrowPrevSm, PlusTwo } from "@/svg";
+import ProductItem from "./product-item";
+import ErrorMsg from "@/components/common/error-msg";
+import { HomeThreeTrendingPrdLoader } from "@/components/loader";
 
 // slider settings
 const sliderSetting = {
   slidesPerView: 1,
   spaceBetween: 0,
-  effect: 'fade',
+  effect: "fade",
   pagination: {
     el: ".tp-special-slider-dot",
     clickable: true,
@@ -21,7 +22,7 @@ const sliderSetting = {
   navigation: {
     nextEl: ".tp-special-slider-button-next",
     prevEl: ".tp-special-slider-button-prev",
-  }
+  },
 };
 
 const TrendingSpecialPrd = () => {
@@ -30,10 +31,12 @@ const TrendingSpecialPrd = () => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    fetch('https://eclipse-products-backend.vercel.app/api/products/all')
-      .then(res => res.json())
-      .then(data => {
-        setProducts(data.data.sort(() => 0.5 - Math.random()).slice(0, 7));
+    fetch("/api/products") // ⬅ FAST PROXY ROUTE
+      .then((res) => res.json())
+      .then((data) => {
+        setProducts(
+          data.data.sort(() => 0.5 - Math.random()).slice(0, 7) // shuffle
+        );
         setLoading(false);
       })
       .catch(() => setError(true));
@@ -41,7 +44,8 @@ const TrendingSpecialPrd = () => {
 
   if (loading) return <HomeThreeTrendingPrdLoader loading={true} />;
   if (error) return <ErrorMsg msg="There was an error" />;
-  if (!products || products.length === 0) return <ErrorMsg msg="No Products found!" />;
+  if (!products || products.length === 0)
+    return <ErrorMsg msg="No Products found!" />;
 
   return (
     <section className="tp-special-area fix">
@@ -51,6 +55,7 @@ const TrendingSpecialPrd = () => {
             <div className="tp-special-slider-thumb">
               <div className="tp-special-thumb">
                 <Image src={special_thumb} alt="special-big img" priority />
+
                 <div className="tp-special-hotspot-item tp-special-hotspot-1">
                   <span className="tp-hotspot tp-pulse-border ">
                     <PlusTwo />
@@ -60,12 +65,15 @@ const TrendingSpecialPrd = () => {
                     <p>Discover top-selling men's wear.</p>
                   </div>
                 </div>
+
                 <div className="tp-special-hotspot-item tp-special-hotspot-2">
                   <span className="tp-hotspot tp-pulse-border ">
                     <PlusTwo />
                   </span>
                   <div className="tp-special-hotspot-content">
-                    <h3 className="tp-special-hotspot-title">Premium Collection</h3>
+                    <h3 className="tp-special-hotspot-title">
+                      Premium Collection
+                    </h3>
                     <p>Modern, stylish and trending items.</p>
                   </div>
                 </div>
@@ -76,7 +84,9 @@ const TrendingSpecialPrd = () => {
           <div className="col-xl-7 col-md-6">
             <div className="tp-special-wrapper grey-bg-9 pt-85 pb-35">
               <div className="tp-section-title-wrapper-3 mb-40 text-center">
-                <span className="tp-section-title-pre-3">Trending This Week’s</span>
+                <span className="tp-section-title-pre-3">
+                  Trending This Week’s
+                </span>
                 <h3 className="tp-section-title-3">Special products</h3>
               </div>
 
@@ -90,7 +100,10 @@ const TrendingSpecialPrd = () => {
                         className="tp-special-slider-active swiper-container"
                       >
                         {products.map((item) => (
-                          <SwiperSlide key={item._id} className="tp-special-item grey-bg-9">
+                          <SwiperSlide
+                            key={item._id}
+                            className="tp-special-item grey-bg-9"
+                          >
                             <ProductItem product={item} prdCenter={true} />
                           </SwiperSlide>
                         ))}
@@ -98,6 +111,7 @@ const TrendingSpecialPrd = () => {
 
                       {/* dot style */}
                       <div className="tp-swiper-dot tp-special-slider-dot d-sm-none text-center"></div>
+
                       <div className="tp-special-arrow d-none d-sm-block">
                         <button className="tp-special-slider-button-prev">
                           <ArrowPrevSm />

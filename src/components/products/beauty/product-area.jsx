@@ -8,21 +8,23 @@ import { HomeThreePrdLoader } from '@/components/loader';
 const ProductArea = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
 
   useEffect(() => {
-    fetch('https://eclipse-products-backend.vercel.app/api/products/all')
+    fetch('/api/products')
       .then(res => res.json())
       .then(data => {
-        setProducts(data.data.sort(() => 0.5 - Math.random()).slice(0, 8));
+        const random = data.data
+          ?.sort(() => 0.5 - Math.random())
+          .slice(0, 8);
+
+        setProducts(random);
         setLoading(false);
       })
-      .catch(() => setError(true));
+      .catch(() => setLoading(false));
   }, []);
 
   if (loading) return <HomeThreePrdLoader loading={true} />;
-  if (error) return <ErrorMsg msg="There was an error" />;
-  if (!products || products.length === 0) return <ErrorMsg msg="No Products found!" />;
+  if (!products?.length) return <ErrorMsg msg="No Products found!" />;
 
   return (
     <section className="tp-product-area grey-bg-8 pt-95 pb-80">
@@ -34,6 +36,7 @@ const ProductArea = () => {
               <h3 className="tp-section-title-3">Best sellers</h3>
             </div>
           </div>
+
           <div className="col-lg-6 col-md-4">
             <div className="tp-product-more-3 text-md-end mb-65">
               <Link href="/shop" className="tp-btn">
@@ -42,6 +45,7 @@ const ProductArea = () => {
             </div>
           </div>
         </div>
+
         <div className="row">
           {products.map(prd => (
             <div key={prd._id} className="col-lg-3 col-md-4 col-sm-6">
